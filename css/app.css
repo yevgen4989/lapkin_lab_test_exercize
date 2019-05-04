@@ -1,0 +1,429 @@
+@import "fonts.css";
+
+html, body{
+    position:relative;
+    width:100%;
+    height:100%
+
+}
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header{
+    background-color: #dcdcdc;
+    width: 100%;
+    height: auto;
+    padding: 38px 0;
+    padding-bottom: 65px;
+}
+.logo{
+    margin-top: 27px;
+    margin-left: 3px;
+}
+.logo a{
+    transition: all 0.3s linear;
+}
+.logo a:hover{
+    filter: invert(1);
+}
+.contact-numbers ul{
+    list-style: none;
+    margin: 0;
+}
+.contact-numbers li a{
+    display: block;
+    font-family: 'OpenSansCondensedLight';
+    font-size: 40px;
+    line-height: 1;
+    color: #767676;
+    transition: all 0.3s linear;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+.contact-numbers li:last-child a{
+    margin-bottom: 0;
+}
+.contact-numbers a:hover{
+    color: #555555;
+}
+.feedback{
+    margin-top: 2px;
+    float: right;
+}
+.feedback a{
+    font-family: 'PTSansBold';
+    font-size: 24px;
+    color: #767676;
+    border-bottom: 2px dashed #767676;
+    transition: all 0.3s linear;
+    letter-spacing: 0.6px;
+}
+.feedback a:hover{
+    color: #555555;
+    border-bottom: 2px dashed #555555;
+}
+.menu-block{
+    display: inline-block;
+    background-color: #777777;
+    width: 100%;
+    height: auto;
+}
+ul.menu-general{
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    margin-left: 33px;
+}
+ul.menu-general li.menu-item {
+    padding: 0;
+    margin: 0;
+}
+@media print, screen and (min-width: 40em){
+    ul.menu-general li.menu-item {
+        padding: 0;
+        margin: 5px 0;
+    }
+    ul.menu-general{
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 33px;
+        margin-left: 33px;
+    }
+}
+
+ul.menu-general li.menu-item a{
+    font-family: 'PTSansRegular';
+    font-size: 30px;
+    color: #fff;
+    line-height: 0.7;
+    border-right: 2px solid #fff;
+    padding: 0 20px;
+    letter-spacing: 0.8px;
+    transition: all 0.3s linear;
+}
+ul.menu-general li.menu-item a:hover{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-style: inherit;
+}
+ul.menu-general li.menu-item:last-child a{
+    border: 0;
+}
+@media print, screen and (min-width: 64em){
+    .column.padding-0{
+        padding: 0;
+    }
+    .padding-0{
+        padding: 0;
+    }
+}
+.slider{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.breadcrumbs-block {
+    margin: 10px 0;
+}
+ul.breadcrumbs li a{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+    text-transform: initial;
+    color: #767676;
+    border-bottom: 1px #757575 solid;
+}
+.breadcrumbs a:hover{
+    text-decoration: none;
+    color: #4F4F4F;
+    border-bottom: 1px #4F4F4F solid;
+}
+.breadcrumbs li.disabled {
+    cursor: none;
+    color: #757575;
+}
+.breadcrumbs li.disabled a{
+    color: #757575;
+    border: 0;
+}
+.breadcrumbs li.disabled a:hover{
+    cursor: default;
+}
+.breadcrumbs li {
+    padding: 0;
+    line-height: 1;
+}
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after{
+    display: none;
+    border: 0;
+}
+aside h5{
+    font-family: 'PTSansRegular';
+    font-size: 18px;
+    color: #767676;
+}
+aside ul.accordion-menu a{
+    font-family: 'PTSansRegular';
+    font-size: 18px;
+    color: #767676;
+    transition: all 0.3s linear;
+}
+aside ul.accordion-menu li:first-child a{
+    padding-top: 0;
+}
+.accordion-menu a{
+    padding: 8.5px 0;
+}
+.accordion-menu .is-accordion-submenu a{
+    padding: 6px 0;
+    margin-left: -3px;
+}
+ul.accordion-menu .nested.is-accordion-submenu li{
+    list-style: initial;
+    color: #767676;
+}
+ul.accordion-menu li.current a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+ul.accordion-menu .nested.is-accordion-submenu li.current a{
+    color: #070707;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.accordion-menu .nested.is-accordion-submenu {
+    margin-right: 0;
+    margin-left: 2rem;
+}
+li.is-accordion-submenu-parent[aria-expanded="true"] > a{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+aside ul.accordion-menu:not(.is-submenu-item) a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+aside ul.accordion-menu .is-submenu-item a{
+    font-size: 14px;
+}
+.product-item{
+    background-color: #dcdcdc;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.product-item .product-item-img{
+    margin-bottom: 20px;
+}
+.product-item .product-item-decsription p{
+    font-family: 'PTSansRegular';
+    font-size: 18px;
+    color: #767676;
+}
+.product-item .product-item-price-and-buy p{
+    font-family: 'PTSansBold';
+    font-size: 28px;
+    color: #444444;
+    margin: 0;
+    float: left;
+}
+.product-item-price-and-buy {
+    display: inline-table;
+    position: relative;
+    width: 100%;
+}
+.product-item-price-and-buy .product-button-buy{
+    float: right;
+    padding: 9px 0;
+    transition: all 0.1s linear;
+}
+.product-button-buy:hover{
+    filter: brightness(0.5)
+}
+nav ul.pagination li a{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+}
+nav ul.pagination li.current a{
+    font-size: 18px;
+}
+.pagination a{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+}
+.pagination a:hover, .pagination button:hover {
+    color: #585858;
+    background: none;
+}
+.pagination .current {
+    font-family: 'PTSansRegular';
+    font-size: 18px;
+    padding: 0.1875rem 0.625rem;
+    color: #444444;
+    background: none;
+    cursor: default;
+}
+hr.line{
+    display: block;
+    background-color: #777777;
+    height: 1px;
+    margin: 35px 0 15px 0;
+    border: 0;
+}
+footer{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #777777;
+}
+.text-content p{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+    color: #767676;
+}
+.main-section{
+    margin-bottom: 200px;
+    margin-top: 20px;
+}
+.footer-content{
+    padding: 50px 0;
+}
+.copyright p{
+    margin: 0;
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+    color: #ffffff;
+}
+.copyright p a{
+    color: #ffffff;
+    transition: all 0.1s linear;
+}
+.copyright p a:hover{
+    color: #A1A1A1;
+}
+ul.vertical.menu.bottom li a{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    transition: all 0.1s linear;
+}
+ul.vertical.menu.bottom li a:hover{
+    color: #A1A1A1;
+}
+ul.vertical.menu.bottom li:first-child a{
+    padding-top: 0;
+}
+.menu.bottom a {
+    line-height: 1;
+        display: block;
+    padding: 6.5px 1rem;
+}
+.development{
+    display: block;
+    float: right;
+    margin-right: -100px;
+}
+.development p{
+    font-family: 'PTSansRegular';
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    width: 55%;
+}
+.development p .underline{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+.development p .underline a{
+    color: #ffff;
+    transition: all 0.1s linear;
+}
+.development p .underline a:hover{
+    color: #A1A1A1;
+}
+.price-list{
+    display: block;
+    margin-top: 112px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+}
+.price-list a:hover{
+    filter: invert(0.5);
+}
+.price-list img{
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.price-list p{
+    font-family: 'PTSansBold';
+    font-size: 30px;
+    color: #444444;
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+.price-list a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+@media print, screen and (min-width: 40em){
+    .slick-prev {
+        display: none;
+    }
+    .slick-next {
+        display: none;
+    }
+    .breadcrumbs-block {
+        margin: 10px 17px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1040px){
+    .breadcrumbs-block {
+        margin: 10px 17px;
+    }
+}
+@media screen and (min-width: 1040px){
+    .breadcrumbs-block {
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width: 39.99875em){
+    .small-text-center{
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .feedback{
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+    .breadcrumbs-block {
+        margin: 10px 17px;
+    }
+    .price-list{
+        margin-top: 20px;
+    }
+    .development{
+        float: none;
+        margin: 0;
+        margin-top: 35px;
+    }
+    .copyright{
+        margin-bottom: 25px;
+    }
+    .development p{
+        width: 100%;
+    }
+    ul.menu-general li.menu-item{
+        margin: 10px auto;
+    }
+    ul.menu-general li.menu-item a{
+        border: 0;
+    }
+}
